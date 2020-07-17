@@ -5,10 +5,11 @@ import { GifGrid } from './components/GifGrid';
 
 
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ defaultCategories = [] }) => {
     // const categories = ;
 
-const [categories, setCategories] = useState(['One Punch Man'])
+// const [categories, setCategories] = useState(['One Punch Man'])
+const [categories, setCategories] = useState(defaultCategories)
 
 //  const handleAdd = () => {
 //      setCategories([
@@ -20,7 +21,7 @@ const [categories, setCategories] = useState(['One Punch Man'])
 
     return ( 
         <>
-            <h2>GifExpertApp</h2>
+            <h2>Gif Search App</h2>
             <AddCategory setCategories={setCategories} />
             <hr/>
 
